@@ -1,161 +1,158 @@
-Global rules
-* {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
+Global rules * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
 }
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 0;
-    margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
 }
 ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 img {
-    max-width: 500px;
-    max-height: 500px;
+  max-width: 500px;
+  max-height: 500px;
 }
 .continer {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 /* small screen */
 @media screen and (min-width: 770px) {
-    .continer {
-        width: 730px;
-    }  
+  .continer {
+    width: 730px;
+  }
 }
 /* medium screen */
 @media screen and (min-width: 990px) {
-    .continer {
-        width: 950px;
-    }  
+  .continer {
+    width: 950px;
+  }
 }
 /* large screen */
 @media screen and (min-width: 1200px) {
-    .continer {
-        width: 1160px;
-    }  
+  .continer {
+    width: 1160px;
+  }
 }
 /********************
        header
 *********************/
 header {
-    width: 100%;
-    background-color: rgba(54, 53, 53, 0.658);
+  width: 100%;
+  background-color: rgba(54, 53, 53, 0.658);
 }
 header .continer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .continer nav ul li {
-    padding: 5px;
-    border: 2px solid transparent;
-    cursor: pointer;
+  padding: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 .continer nav ul li:hover {
-    transition: all 0.3s ease-in;
-    border: 2px solid greenyellow;
+  transition: all 0.3s ease-in;
+  border: 2px solid greenyellow;
 }
 
 .continer nav ul li a:not(:last-child) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 /*********************
     image section 
 **********************/
 section {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .slider .continer .images {
-    display: grid;
-    grid-template-columns: 100px 500px;
-    grid-column-gap: 30px;
+  display: grid;
+  grid-template-columns: 100px 500px;
+  grid-column-gap: 30px;
 }
 .slider .continer .images .all-images {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .slider .continer .images .all-images img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.315);
-} 
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.315);
+}
 .slider .continer .images .all-images img:hover {
-    cursor: pointer;
-    border: 2px solid black; transition: all 0.3s ease-in;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: all 0.3s ease-in;
 }
 .slider .continer .images .all-images .active {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 .slider .continer .images .imgSlider {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-left: 50px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 50px;
+  height: 500px;
+}
+.slider .continer .images .imgSlider img {
+  width: 500px;
+  height: 500px;
 }
 .slider .continer .images .imgSlider i {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    z-index: 5;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
 }
 .slider .continer .images .imgSlider #slideRight {
-    width: 30px;
-    height: 100%;
-    background-color: cornflowerblue;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    transition: all 0.3s ease-in;
-    z-index: 5;
+  width: 30px;
+  height: 100%;
+  background-color: cornflowerblue;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease-in;
+  z-index: 5;
 }
 .slider .continer .images .imgSlider #slideLeft {
-    width: 30px;
-    height: 100%;
-    background-color: cornflowerblue;
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    transition: all 0.3s ease-in;
-    z-index: 5;
+  width: 30px;
+  height: 100%;
+  background-color: cornflowerblue;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in;
+  z-index: 5;
 }
 .slider .continer .images .imgSlider #slideLeft:hover {
-    opacity: 0.3;
-    cursor: pointer;
+  opacity: 0.3;
+  cursor: pointer;
 }
 .slider .continer .images .imgSlider #slideRight:hover {
-    opacity: 0.3;
-    cursor: pointer;
+  opacity: 0.3;
+  cursor: pointer;
 }
 .slider .continer .images .imgSlider i:first-of-type {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .slider .continer .images .imgSlider i:nth-of-type(2) {
-    right: 0;
-    transform: rotate(-180deg);
+  right: 0;
+  transform: rotate(-180deg);
 }
 
 .slider .continer .images .imgSlider .slideImg {
-    position: absolute;
-
+  position: absolute;
 }
-
-
-
-
-
-
- 
