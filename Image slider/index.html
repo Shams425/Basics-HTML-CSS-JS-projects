@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slider</title>
+        <!-- normliz css file -->
+        <link rel= "stylesheet" href= "css/normaliz.css">
+        <!-- main css file -->
+        <link rel= "stylesheet" href= "css/main.css">
+        <!-- font awsome librery -->
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class= "continer">
+                <div class="logo">
+                    <img src= "" alt="">
+                </div>
+                <nav role= "navigation">
+                    <ul>
+                        <li><a href= "#home">Home</a></li>
+                        <li><a href= "#Protofilo">Protofilo</a></li>
+                        <li><a href= "#Contact">Contact</a></li>
+                        <li><a href= "#About us">About us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- ========================= images section ================ -->
+        <section class= "slider" role= "slider">
+            <div class="continer">
+                <div class="images">
+                    <div class="all-images">
+                        <img class= "image active"src= "images/produtc1.jfif"alt="">
+                        <img class= "image"src= "images/product2.jfif" alt="">
+                        <img class= "image"src= "images/product3.png" alt="">
+                    </div>
+                    <div class="imgSlider" id= "continer">
+                        <i class= "fas fa-angle-right" id= "right"></i>
+                        <i class= "fas fa-angle-left" id= "left" ></i>
+                        <span id= "slideLeft"></span>
+                        <span id= "slideRight"></span>
+                        <div id="slideImg">
+                            <img class= "img" src= "images/produtc1.jfif" alt="">
+                        </div>
+                        <div id="slideImg">
+                            <img class= "img" src= "images/product2.jfif" alt="">
+                        </div>
+                        <div id="slideImg">
+                            <img class= "img" src= "images/product3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src= "JS/main.js"></script>
+    </body>
+</html>
