@@ -1,0 +1,84 @@
+/* Glboal rules */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-items: center;
+}
+button {
+  border: 0.5px solid #ccc;
+  outline: none;
+  background-color: rgba(78, 146, 248, 0.986);
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.dropMenu {
+  display: none;
+}
+.dropMenu nav {
+  display: none;
+}
+.continer .active .slideMenu {
+  display: block;
+}
+/* ======================== contnet ================= */
+.continer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  height: 200px;
+}
+.continer .content {
+  position: relative;
+  height: 100%;
+  width: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.continer .active {
+  position: relative;
+}
+.continer .active .dropMenu {
+  display: block;
+  flex: 1;
+  position: absolute;
+  box-shadow: 9px 6px 16px -5px rgb(112, 109, 109);
+  width: 100%;
+}
+.continer .active:first-of-type .dropMenu {
+  right: 100%;
+}
+.continer .active:nth-of-type(2) .dropMenu {
+  bottom: 100%;
+}
+.continer .active:nth-of-type(3) .dropMenu {
+  left: 68%;
+}
+.continer .active:last-of-type .dropMenu {
+  top: 13%;
+}
+.continer .active .dropMenu nav {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid #ccc;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 10px;
+  justify-content: space-between;
+}
