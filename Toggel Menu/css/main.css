@@ -1,9 +1,8 @@
 /* global rules */
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-
 }
 body {
   font-family: "open sans" serif;
@@ -14,7 +13,6 @@ body {
   height: 100vh;
   background-size: cover;
   z-index: -1;
-
 }
 a {
   text-decoration: none;
@@ -110,6 +108,7 @@ header .nav .icons span::after {
 }
 .active .slideMenu {
   right: 0;
+  position: fixed;
 }
 .active .slideMenu ul li a {
   padding: 0 20px;
@@ -121,11 +120,6 @@ header .nav ul li a {
 }
 header .nav ul li a:hover {
   border: 2px solid #18ece3db;
-  transition: all 0.3s ease-in;
-}
-
-header .nav .icons span:hover {
-  background-color: #18ece3db;
   transition: all 0.3s ease-in;
 }
 header .nav .icons:hover span,
