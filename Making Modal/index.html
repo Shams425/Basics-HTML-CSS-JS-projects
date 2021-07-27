@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modal</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="overlay">
+            <span></span>
+        </div>
+        <div class="continer">
+           <div class="buttons">
+            <button class= "press" data-target= "#Modal1">Open Modal</button>
+            <button class= "press" data-target= "#Modal2">Open Modal 2</button>
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea natus, suscipit a ex minus dolorem! Accusantium quod iste ipsum assumenda ratione. Cum inventore perferendis ad explicabo, non maiores! Ducimus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quos numquam enim, dolores repellendus cum sit sequi molestias sed eius necessitatibus quia, voluptatem quo! Asperiores ipsum laudantium assumenda eos voluptates?</p>
+            </div> 
+        </div>
+        
+        <div class="modals">
+            <div class="modal" id= "Modal1">
+                <div class="heading">
+                    <h4>First modal</h4>
+                    <button class= "close">&times</button>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam tempore beatae tempora labore? Maiores ratione repudiandae repellendus est harum? Fugit, modi facere? Quisquam nam facere similique, distinctio nobis modi quaerat?</p>
+                </div>
+            </div>
+            <div class="modal"  id= "Modal2">
+                <div class="heading">
+                    <h4>Second modal</h4>
+                    <button id= "close">&times</button>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam tempore beatae tempora labore? Maiores ratione repudiandae repellendus est harum? Fugit, modi facere? Quisquam nam facere similique, distinctio nobis modi quaerat?</p>
+                </div>
+            </div>
+        </div>
+        <script src= "JS/main.js"></script>
+    </body>
+</html>

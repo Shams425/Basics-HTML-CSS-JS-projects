@@ -1,0 +1,88 @@
+/* Global Rules */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+  perspective: 500px;
+}
+.active .overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 3;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+}
+.buttons button {
+  width: 130px;
+  outline: none;
+  border: 0.5px solid #ccc;
+  margin-right: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.info {
+  width: 100vw;
+  padding: 0 20px 20px 20px;
+}
+.modals {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -250px;
+  width: 500px;
+  z-index: 5;
+  transition: all 0.3s ease-in;
+}
+
+.modals .active {
+  position: absolute;
+  top: 150px;
+  transition: all 0.3s ease-in;
+}
+.modal {
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+  position: absolute;
+  top: -100px;
+  width: 450px;
+  transition: all 0.3s ease-in;
+}
+
+.modals .modal .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ccc;
+  padding: 0 20px;
+  border-radius: 10px 10px 0 0;
+  color: rgba(29, 136, 236, 0.767);
+}
+.modals .modal .heading button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+  border: 0.5px solid rgba(7, 7, 7, 0.5);
+  padding: 2px 5px;
+  color: red;
+}
+.modals .modal .content {
+  background-color: white;
+  padding: 15px;
+}
