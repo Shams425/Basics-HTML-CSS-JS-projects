@@ -1,0 +1,58 @@
+body {
+  font-family: "open sans" serif;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-size: cover;
+  z-index: -1;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+section .continer {
+  width: 992px;
+  margin: 50px auto;
+}
+section .continer .content {
+  padding: 0 20px;
+}
+section .continer .heading {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
+}
+section .continer .heading button {
+  position: relative;
+  top: 1px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+section .continer .heading .active {
+  border: 1px solid #ccc;
+  border-bottom-color: white;
+  border-radius: 5px 5px 0 0;
+}
+section .continer .content {
+  padding: 0 15px;
+  position: relative;
+}
+section .continer .conrent h2,
+section .continer .content p {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+section .continer .content div {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+section .continer .content .info {
+  display: block;
+}
