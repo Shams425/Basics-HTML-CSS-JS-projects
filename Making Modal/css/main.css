@@ -42,7 +42,7 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: -250px;
+  top: -300px;
   width: 500px;
   z-index: 5;
   transition: all 0.3s ease-in;
@@ -50,7 +50,7 @@ body {
 
 .modals .active {
   position: absolute;
-  top: 150px;
+  top: 200px;
   transition: all 0.3s ease-in;
 }
 .modal {
