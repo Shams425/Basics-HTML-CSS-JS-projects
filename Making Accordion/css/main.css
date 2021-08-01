@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 20px 0;
   place-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h2,
 p {

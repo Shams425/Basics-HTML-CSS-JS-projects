@@ -9,6 +9,7 @@
 body {
   overflow: hidden;
   perspective: 500px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .active .overlay {
   width: 100vw;

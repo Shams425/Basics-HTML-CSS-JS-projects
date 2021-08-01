@@ -10,6 +10,7 @@ h2 {
 body {
   padding: 0 40px;
   perspective: 500px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 p {
   width: 400px;

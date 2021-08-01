@@ -1,6 +1,6 @@
 const button = document.querySelectorAll(".buttons button");
 const modal = document.querySelectorAll(".modal");
-const leave = document.querySelectorAll(".modals .modal .heading button");
+const leave = document.querySelectorAll(".heading button");
 const quit = document.querySelector(".overlay");
 let index = 0;
 

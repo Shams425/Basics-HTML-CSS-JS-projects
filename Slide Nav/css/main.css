@@ -1,0 +1,71 @@
+/* Global rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.continer {
+  width: 100vw;
+  display: flex;
+  margin: 0;
+}
+.SlideMenu {
+  display: flex;
+  flex-direction: column;
+  max-width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.562);
+  flex: 1;
+  transition: all 0.3s ease-out;
+}
+.SlideMenu .header {
+  display: flex;
+  justify-content: flex-end;
+}
+.SlideMenu .header button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgba(7, 7, 7, 0.863);
+  font-size: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.SlideMenu .header button:hover {
+  color: rgba(255, 0, 0, 0.534);
+}
+.continer .active {
+  max-width: 20%;
+  transition: all 0.3s ease-in;
+  margin: 0 20px 0 0;
+}
+.continer .content {
+  max-width: 50%;
+  padding: 0 20px;
+}
+.continer .content ul {
+  padding: 0 20px;
+}
+.continer .SlideMenu .body ul li:hover {
+  background-color: rgba(173, 236, 78, 0.699);
+}
+.continer .SlideMenu .body ul li {
+  padding: 20px 0 20px 20px;
+}
+.continer .SlideMenu .body ul li a {
+  margin: 10px 0;
+}

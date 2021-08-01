@@ -9,6 +9,7 @@ body {
   height: 100vh;
   width: 100vw;
   place-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
   border: 0.5px solid #ccc;

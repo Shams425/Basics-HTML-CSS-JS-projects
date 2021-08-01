@@ -5,7 +5,7 @@
   -moz-box-sizing: border-box;
 }
 body {
-  font-family: "open sans" serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -71,10 +71,9 @@ header .nav .icons {
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px;
+  position: relative;
 }
-header .nav .icons span,
-header .nav .icons span::before,
-header .nav .icons span::after {
+header .nav .icons span {
   content: "";
   position: absolute;
   width: 30px;
@@ -84,26 +83,27 @@ header .nav .icons span::after {
   display: block;
   transition: all 0.3s ease-in-out;
 }
-header .nav .icons span {
-  top: 48%;
-}
-header .nav .icons span::before {
+header .nav .icons span:first-of-type {
   top: 10px;
 }
-header .nav .icons span::after {
-  bottom: 10px;
+
+header .nav .icons span:nth-of-type(2) {
+  top: 48%;
 }
-.active header .nav .icons span {
+header .nav .icons span:last-of-type {
+  bottom: 8px;
+}
+.active header .nav .icons span:nth-of-type(2) {
   background-color: transparent;
 }
-.active header .nav .icons span::before,
-.active header .nav .icons span::after {
-  top: 0;
+.active header .nav .icons span:first-of-type,
+.active header .nav .icons span:last-of-type {
+  top: 50%;
 }
-.active header .nav .icons span::before {
+.active header .nav .icons span:first-of-type {
   transform: rotate(-45deg);
 }
-.active header .nav .icons span::after {
+.active header .nav .icons span:last-of-type {
   transform: rotate(45deg);
 }
 .active .slideMenu {
@@ -122,13 +122,11 @@ header .nav ul li a:hover {
   border: 2px solid #18ece3db;
   transition: all 0.3s ease-in;
 }
-header .nav .icons:hover span,
-header .nav .icons:hover span::after,
-header .nav .icons:hover span::before {
+header .nav .icons:hover span {
   background-color: #18ece3db;
   transition: all 0.2s ease-in;
 }
-.active header .nav .icons:hover span {
+.active header .nav .icons:hover span:nth-of-type(2) {
   background-color: transparent;
 }
 header .nav .icons:hover {
