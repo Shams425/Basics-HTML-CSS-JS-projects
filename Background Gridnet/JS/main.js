@@ -6,8 +6,8 @@ const changeColor = document.querySelector(".background");
 function getvalue() {
     changeColor.style.background = `linear-gradient(
         to bottom,
-        ${color1.value} 50%,
-        ${color2.value} 50%`;
+        ${color1.value} ${color1_percent.value}%,
+        ${color2.value} ${color2_percent.value}%`;
         //check if the background has a red color!
     let red1 = HextoRGB(color1.value).r;     // to pick the value of red from the returing object of the function
     let red2 =  HextoRGB(color2.value).r;
@@ -28,13 +28,14 @@ function getvalue() {
 
 color1.addEventListener("input", getvalue);
 color2.addEventListener("input", getvalue);
-let currentDirection = "bottom"; // the defualt value
+
 
 // change the direction of gradient
 const up = document.querySelector(".direction .top")
 const down = document.querySelector(".direction .bottom")
 const right = document.querySelector(".direction .right")
 const left = document.querySelector(".direction .left")
+let currentDirection = "bottom"; // the defualt value
 
 up.addEventListener('click' , () => {
     currentDirection = up.classList;
@@ -75,7 +76,7 @@ let color2_value = document.querySelector(".percent .color2 span");
 
 function color1percent() {
     color1_percent.addEventListener("input" , () => {
-        color2_percent.value = 100 - color1_percent.value - 1
+        color2_percent.value = 100 - (color1_percent.value - 1)
     });
     changeColor.style.background = `linear-gradient(
         to ${currentDirection},
