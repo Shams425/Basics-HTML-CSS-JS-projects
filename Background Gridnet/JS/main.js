@@ -25,11 +25,49 @@ function getvalue() {
     changeColor.style.transition= `all 0.5s ease-in`;
     }
 }
+
 color1.addEventListener("input", getvalue);
 color2.addEventListener("input", getvalue);
+let currentDirection = "bottom"; // the defualt value
+
+// change the direction of gradient
+const up = document.querySelector(".direction .top")
+const down = document.querySelector(".direction .bottom")
+const right = document.querySelector(".direction .right")
+const left = document.querySelector(".direction .left")
+
+up.addEventListener('click' , () => {
+    currentDirection = up.classList;
+    changeColor.style.background = `linear-gradient(
+        to top,
+        ${color1.value}  ${color1_percent.value}%,
+        ${color2.value}  ${color2_percent.value}%`
+});
+down.addEventListener('click' , () => {
+    currentDirection = down.classList;
+    changeColor.style.background = `linear-gradient(
+        to bottom,
+        ${color1.value}  ${color1_percent.value}%,
+        ${color2.value}  ${color2_percent.value}%`
+        
+});
+left.addEventListener('click' , () => {
+    currentDirection = left.classList;
+    changeColor.style.background = `linear-gradient(
+        to left,
+        ${color1.value}  ${color1_percent.value}%,
+        ${color2.value}  ${color2_percent.value}%`
+});
+right.addEventListener('click' , () => {
+    currentDirection = right.classList;
+    changeColor.style.background = `linear-gradient(
+        to right,
+        ${color1.value}  ${color1_percent.value}%,
+        ${color2.value}  ${color2_percent.value}%`
+        console.log(currentDirection)
+});
 
 // change the percent of gradient 
-
 let color1_percent = document.querySelector(".percent .color1 input");
 let color1_value = document.querySelector(".percent .color1 span");
 let color2_percent = document.querySelector(".percent .color2 input");
@@ -40,7 +78,7 @@ function color1percent() {
         color2_percent.value = 100 - color1_percent.value - 1
     });
     changeColor.style.background = `linear-gradient(
-        to bottom,
+        to ${currentDirection},
         ${color1.value}  ${color1_percent.value}%,
         ${color2.value}  ${color2_percent.value}%`;
     color1_value.innerHTML = color1_percent.value;
@@ -51,7 +89,7 @@ function color2percent() {
         color1_percent.value = 100 - (color2_percent.value - 1)
     });
     changeColor.style.background = `linear-gradient(
-        to bottom,
+        to ${currentDirection},
         ${color1.value}  ${color1_percent.value}%,
         ${color2.value}  ${color2_percent.value}%`;
     color2_value.innerHTML = color2_percent.value;
@@ -60,38 +98,6 @@ function color2percent() {
 
 color1_percent.addEventListener("input" ,color1percent);
 color2_percent.addEventListener("input" ,color2percent);
-
-// change the direction of gradient
-const up = document.querySelector(".direction .up")
-const down = document.querySelector(".direction .down")
-const right = document.querySelector(".direction .right")
-const left = document.querySelector(".direction .left")
-
-up.addEventListener('click' , () => {
-    changeColor.style.background = `linear-gradient(
-        to top,
-        ${color1.value}  ${color1_percent.value}%,
-        ${color2.value}  ${color2_percent.value}%`
-});
-down.addEventListener('click' , () => {
-    changeColor.style.background = `linear-gradient(
-        to bottom,
-        ${color1.value}  ${color1_percent.value}%,
-        ${color2.value}  ${color2_percent.value}%`
-        
-});
-left.addEventListener('click' , () => {
-    changeColor.style.background = `linear-gradient(
-        to left,
-        ${color1.value}  ${color1_percent.value}%,
-        ${color2.value}  ${color2_percent.value}%`
-});
-right.addEventListener('click' , () => {
-    changeColor.style.background = `linear-gradient(
-        to right,
-        ${color1.value}  ${color1_percent.value}%,
-        ${color2.value}  ${color2_percent.value}%`
-});
 
 // the function returing an objuct with the { red: green:  blue: }
 function HextoRGB(hex) {
