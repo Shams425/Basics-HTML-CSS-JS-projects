@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Grindent</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="background">
+        <div class="input">
+            <div class="header">
+                <input type="color" id= "color1" value="#9acd32">
+                <input type="color" id= "color2" value= "#0000ff"> 
+            </div>
+            <div class="percent">
+                <div class="color1">
+                 <label for="text">Color1 %<input type="range" min="0" max= "100" step= "1" start= "0"></label> 
+                 <span>50</span>  
+                </div>
+                <div class="color2">
+                  <label for="text">Color2 %<input type="range" min="0" max= "100" step= "1" start= "0"></label>
+                  <span>50</span>  
+                </div> 
+            </div>
+        </div>
+       <div class="changing">
+        <h2><span class= "first">Grindent</span> <span class= "second">direction</span></h2>
+        <div class="direction" id= "continer">
+            <div class="up">
+                <i class= "fas fa-arrow-up"></i>
+            </div>
+            <div class="right">
+                <i class= "fas fa-arrow-right"></i>
+               </div>
+            <div class="down">
+                 <i class= "fas fa-arrow-down"></i>
+            </div>
+            <div class="left">
+             <i class= "fas fa-arrow-left"></i>
+            </div>
+        </div>
+       </div> 
+    </div>
+    <script src= "JS/main.js"></script>
+</body>
+</html>

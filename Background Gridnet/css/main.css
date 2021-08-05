@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  align-content: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+  top: 40%;
+  left: 30%;
+  font-size: 100px;
+  color: red;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background: linear-gradient(to bottom, yellowgreen 50%, blue 50%);
+  transition: all 0.5s ease-in;
+}
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input .percent {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.percent .color1,
+.percent .color2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input .percent .color1 span,
+.input .percent .color2 span {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding-top: 5px;
+}
+label {
+  margin: 10px;
+}
+label input {
+  margin-left: 20px;
+}
+.header {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header input {
+  width: 100%;
+  margin: 0 20px;
+  height: 50px;
+}
+.direction {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.direction div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+.direction div:first-of-type:hover {
+  transform: scale(0.9);
+  background-color: black;
+}
+.direction div:nth-of-type(2):hover {
+  transform: scale(0.9);
+  background-color: black;
+}
+.direction div:nth-of-type(3):hover {
+  transform: scale(0.9);
+  background-color: black;
+}
+.direction div:last-of-type:hover {
+  transform: scale(0.9);
+  background-color: black;
+}
+.direction div:last-of-type:hover i {
+  transform: scale(0.9);
+  background-color: black;
+}
+.direction div i {
+  font-size: 50px;
+  width: 100%;
+  padding-left: 25px;
+  color: red;
+}
+.direction div:hover i {
+  color: white;
+}
