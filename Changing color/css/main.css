@@ -1,0 +1,158 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+header .press {
+  display: flex;
+  align-items: center;
+}
+header .press button {
+  width: 20%;
+  height: 50px;
+  margin: 0 20px;
+}
+header .side-bar {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  margin: 0 0 0 20px;
+  background: linear-gradient(red 10%, 30%, blue 90%);
+}
+header #box {
+  width: 90%;
+  background-color: blue;
+  height: 300px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  transition: all 0.6s ease-in;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+header ul li:hover {
+  cursor: pointer;
+}
+
+header ul li:first-child {
+  background-color: black;
+}
+header ul li:nth-child(2) {
+  background-color: blue;
+}
+header ul li:nth-child(3) {
+  background-color: yellow;
+}
+header ul li:nth-child(4) {
+  background-color: red;
+}
+header ul li:nth-child(5) {
+  background-color: green;
+}
+header ul li:nth-child(6) {
+  background-color: orange;
+}
+header ul li:nth-child(7) {
+  background-color: blueviolet;
+}
+header ul li:last-child {
+  background-color: royalblue;
+}
+
+.black header ul li:first-child {
+  transform: scale(1.2);
+}
+.blue header ul li:nth-child(2) {
+  transform: scale(1.2);
+}
+.yellow header ul li:nth-child(3) {
+  transform: scale(1.2);
+}
+.red header ul li:nth-child(4) {
+  transform: scale(1.2);
+}
+.green header ul li:nth-child(5) {
+  transform: scale(1.2);
+}
+.orange header ul li:nth-child(6) {
+  transform: scale(1.2);
+}
+.blueviolet header ul li:nth-child(7) {
+  transform: scale(1.2);
+}
+.royalblue header ul li:last-child {
+  transform: scale(1.2);
+}
+header .press {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .scroll {
+  height: 800px;
+  width: 100%;
+}
+.red #box {
+  background-color: red;
+}
+.yellow #box {
+  background-color: yellow;
+}
+.blue #box {
+  background-color: blue;
+}
+.black #box {
+  background-color: black;
+}
+.green #box {
+  background-color: green;
+}
+.orange #box {
+  background-color: orange;
+}
+.blueviolet #box {
+  background-color: blueviolet;
+}
+.royalblue #box {
+  background-color: royalblue;
+}
+/* =============================================== button ========================================= */
+.button {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+section {
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 20px;
+}
+section input {
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  min-height: 50px;
+  border: 1px solid #000;
+}
+section textarea {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+  border: 1px solid #000;
+}
