@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+.backToTop button {
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 80px;
+    height: 80px;
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in;
+    
+}
+.backToTop button.active {
+    right: 15px;
+}
+section {
+    height: 800px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+section:first-of-type {
+    background-color: blue;
+}
+section:nth-of-type(2) {
+    background-color: black;
+}
+section:nth-of-type(3) {
+    background-color: green;
+}
+section:last-of-type {
+    background-color: red;
+}
