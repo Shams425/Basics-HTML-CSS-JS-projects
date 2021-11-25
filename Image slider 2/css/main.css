@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-items: center;
+}
+.continer {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid black;
+}
+.imageSlider {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+img {
+    width: 100%;
+}
+.butt {
+    margin: 20px 0;
+    display: flex;
+}
+button {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 40px;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(0.9);
+}
