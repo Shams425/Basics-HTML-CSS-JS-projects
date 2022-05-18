@@ -22,7 +22,7 @@ body {
   background-color: #343434;
   color: #f3f3f3;
   padding: 0.5rem 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   transition: bottom 1s ease-in-out;
   z-index: 10;
 }
@@ -33,7 +33,7 @@ body {
   height: 300px;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
-  background: url("./project-1.png") no-repeat;
+  background: url("../img/project-1.png") no-repeat;
   background-size: cover;
   background-position-y: 0%;
   transition: background 3s ease-in-out;
@@ -74,6 +74,6 @@ body {
   background: linear-gradient(to bottom, transparent 70%, #3434349b);
 }
 
-.img:hover .btn-visit{
-    bottom: 2rem;
+.img:hover .btn-visit {
+  bottom: 2rem;
 }
