@@ -30,6 +30,10 @@ input {
   width: 100%;
 }
 
+input::placeholder {
+  color: #ccc;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -185,4 +189,69 @@ input {
 .effect-7:focus {
   border-color: #4caf50;
   background-image: url("./assets/search-icon2.png");
+}
+
+/* Effect-8 */
+.effect-8 {
+  /* border: 2px solid #ccc; */
+  border-radius: 0.25rem;
+  background-size: 2.1875rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.input-group .line1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  background-color: #4caf50;
+  width: 0%;
+  transition: all 0.3s ease;
+}
+
+.input-group .line2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  background-color: #4caf50;
+  width: 0%;
+  transition: all 0.3s ease;
+  transition-delay: 0.2s;
+}
+
+.input-group .line3 {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  background-color: #4caf50;
+  width: 1px;
+  height: 0;
+  transition: all 0.3s ease;
+  transition-delay: 0.4s;
+}
+
+.input-group .line4 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #4caf50;
+  width: 1px;
+  height: 0%;
+  transition: all 0.5s ease;
+  transition-delay: 0.6s;
+}
+
+.effect-8:focus + .line1,
+.effect-8:focus + .line1 + .line2 {
+  width: 100%;
+}
+
+.effect-8:focus + .line1 + .line2 + .line3,
+.effect-8:focus + .line1 + .line2 + .line3 + .line4 {
+  height: 100%;
 }
