@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- bootstrap library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="formContainer d-flex flex-wrap">
+          <div class="leftSide col-lg-3 col-md-12 p-0">
+            <img src="assets/img/space_planet.jpg" alt="" />
+          </div>
+
+          <div class="rightSide col-lg-9 col-md-12 pt-4">
+            <!-- form start -->
+            <h2 class="mb-5 text-uppercase">student registration form</h2>
+
+            <form action="POST">
+              <p class="mb-4">Student Info</p>
+              <div class="name d-flex flex-wrap">
+                <div class="inputEffectContainer col-lg-6 col-md-6 col-sm-12">
+                  <input class="inputEffect" type="text" placeholder=" " />
+                  <label>Name :</label>
+                  <span class="focus-border">
+                    <i></i>
+                  </span>
+                </div>
+                <div class="inputEffectContainer col-lg-6 col-md-6 col-sm-12">
+                  <input class="inputEffect" type="text" placeholder=" " />
+                  <label>Father Name :</label>
+                  <span class="focus-border">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="address col-lg-12 mt-3">
+                <p>Address</p>
+                <div class="inputEffectContainer">
+                  <input class="inputEffect" type="text" placeholder=" " />
+                  <span class="focus-border">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="gender my-3 d-flex flex-wrap align-items-center">
+                <p class="m-0">Gender :</p>
+                <div class="options mx-4">
+                  <input type="radio" name="gender" id="" value="Male" />
+                  <label for="radion">Male</label>
+                  <input type="radio" name="gender" id="" value="Female" />
+                  <label for="radion">Female</label>
+                </div>
+              </div>
+
+              <div
+                class="select mt-3 d-flex align-items-center flex-wrap col-12"
+              >
+                <div class="state mt-3 px-4 col-lg-6 col-md-12 col-sm-12">
+                  <p class="m-0">state :</p>
+                  <select name="state" id="" class="form-control">
+                    <option value="London">London</option>
+                    <option value="Liverpool">Liverpool</option>
+                    <option value="Manchester">Manchester</option>
+                  </select>
+                </div>
+                <div class="city mt-3 px-4 col-lg-6 col-md-12 col-sm-12">
+                  <p class="m-0">city :</p>
+                  <select name="state" id="" class="form-control">
+                    <option value="London">London</option>
+                    <option value="Liverpool">Liverpool</option>
+                    <option value="Manchester">Manchester</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="dob col-lg-12 mt-3">
+                <p>DOB</p>
+                <div class="inputEffectContainer">
+                  <input class="inputEffect" type="text" placeholder=" " />
+                  <span class="focus-border">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="pincode col-lg-12 mt-3">
+                <p>Pincode</p>
+                <div class="inputEffectContainer">
+                  <input class="inputEffect" type="text" placeholder=" " />
+                  <span class="focus-border">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="email col-lg-12 mt-3">
+                <p>E-mail</p>
+                <div class="inputEffectContainer">
+                  <input class="inputEffect" type="email" placeholder=" " />
+                  <span class="focus-border">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="formFooter d-flex justify-content-end mt-5">
+                <div class="buttons d-flex">
+                  <button class="btn reset" type="button">Reset All</button>
+                  <button class="btn btn-effect">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap library -->
+    <link rel="stylesheet" href="js/bootstrap.min.js" />
+  </body>
+</html>
