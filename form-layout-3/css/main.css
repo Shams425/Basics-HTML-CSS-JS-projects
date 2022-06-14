@@ -1,0 +1,177 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 80%;
+  height: 60%;
+}
+
+.formContainer {
+  max-width: 900px;
+  max-height: 1200px;
+  background-color: white;
+  border: 1px solid rgba(90, 90, 90, 0.3);
+  border-radius: 20px;
+  box-shadow: 3px 3px 12px 1px #a6a6a6;
+}
+
+.formDetails {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form-control,
+.form-check-input {
+  box-shadow: none !important;
+}
+
+/* input focus effect */
+input:focus {
+  outline: none;
+}
+input {
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+.inputFocus {
+  margin: 40px 3%;
+  position: relative;
+}
+.focusEffect {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+.focusEffect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.4s;
+}
+.focusEffect:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+/* input focus effect end */
+
+/* link effect */
+
+.link a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+}
+.linkEffect {
+  position: relative;
+}
+
+.linkEffect::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to bottom, transparent 62%, #646b8c 0) center
+    center/0% 75% no-repeat;
+  cursor: pointer;
+  border-radius: 3px;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  transition: background-size 0.4s ease;
+}
+
+.linkEffect:hover::before {
+  background-size: 100% 100%;
+}
+
+.linkEffect:active::before {
+  background-size: 80% 100%;
+}
+
+/* link effect end */
+
+.inputContainer {
+  position: relative;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.inputContainer i {
+  position: absolute;
+  top: 15%;
+  left: -25px;
+}
+
+.icons {
+  flex: 1;
+}
+
+.formFooter i {
+  color: white;
+  font-size: 18px;
+}
+.facebook,
+.twitter,
+.google {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(59, 59, 59, 0.4);
+  transition: all 0.3s ease;
+}
+
+.formFooter .facebook:hover {
+  background-color: #39579a;
+}
+
+.formFooter .twitter:hover {
+  background-color: #13c1ff;
+}
+
+.formFooter .google:hover {
+  background-color: rgb(221, 44, 44);
+}
+
+.leftSide {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 990px) {
+  .formContainer img {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+  }
+  .leftSide {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+  .rightSide {
+    width: 100%;
+  }
+}

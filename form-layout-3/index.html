@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- bootstrap library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- sing in form -->
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="formContainer">
+          <div class="formDetails flex-wrap">
+            <div class="rightSide col-lg-6 col-md-12 col-sm-12">
+              <h1 class="m-4 text-center">Sign in</h1>
+
+              <!-- form sing up start -->
+              <form action="POST" class="px-5">
+                <div class="inputContainer">
+                  <i class="fas fa-user"></i>
+                  <div class="inputFocus">
+                    <input class="focusEffect" type="text" placeholder="Name" />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="inputContainer">
+                  <i class="fas fa-lock"></i>
+                  <div class="inputFocus">
+                    <input
+                      class="focusEffect"
+                      type="password"
+                      placeholder="Password"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id=""
+                  />
+                  <label class="form-check-label" for="checkbox">
+                    Remember me
+                  </label>
+                </div>
+                <div
+                  class="submitButton d-flex justify-content-between align-items-center mt-5"
+                  style="width: 100%"
+                >
+                  <button
+                    class="btn btn-success"
+                    style="padding: 15px"
+                    type="submit"
+                  >
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="leftSide col-lg-6 col-md-12 col-sm-12">
+              <img src="assets/img/signin-image.jpg" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="formFooter d-flex flex-wrap align-items-center justify-content-between col-12"
+          >
+            <div
+              class="social col-lg-6 col-md-8 col-sm-8 p-4 d-flex flex-wrap align-items-center"
+            >
+              <p class="mx-3 my-3">Or Login with</p>
+              <div class="icons d-flex my-3 col-sm-12">
+                <div class="facebook">
+                  <i class="fab fa-facebook fa-1x"></i>
+                </div>
+                <div class="twitter">
+                  <i class="fab fa-twitter fa-1x"></i>
+                </div>
+                <div class="google">
+                  <i class="fab fa-google fa-1x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="link text-center p-4 col-lg-6 col-md-4 col-sm-4">
+              <a href="#" class="linkEffect"> Create an account </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- form sign up end -->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
